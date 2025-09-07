@@ -1,0 +1,473 @@
+/* Font Google */
+
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/* Css Reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+:root {
+  --color-primary: rgb(255, 70, 70);
+  --color-secondary: #d51231;
+  --color-light: #d4e9e2;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+body {
+  font-family: "Electrolize", sans-serif;
+}
+
+html {
+  /* font-size: 62.5%;  1rem = 10px yapar */
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+/* NAVBAR Bölümü */
+.nav-bar {
+  background-color: var(--color-black);
+  height: 60px;
+  color: var(--color-light);
+  position: sticky;
+  top: 0;
+}
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 50px;
+}
+.logo-wrapper {
+  .logo {
+    padding-left: 7px;
+    color: var(--color-primary);
+    font-size: 30px;
+  }
+}
+
+.menu-container {
+}
+
+.menu-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.menu-list-item a {
+  color: var(--color-white);
+  cursor: pointer;
+}
+.menu-list-item a:hover {
+  text-shadow: 0px 0px 10px;
+  transition: all 0.2s ease;
+}
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-picture {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-text-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1px;
+}
+
+.toggle {
+  width: 40px;
+  background-color: white;
+  height: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  height: 18px;
+  width: 18px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+  color: #000000;
+}
+
+/* SIDE Bölümü */
+.sidebar {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  height: 100% !important;
+  width: 60px;
+  padding-top: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sidebar .sidebar-container .sidebar-icons i {
+  margin-top: 10px;
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sidebar .sidebar-container .sidebar-icons i:hover {
+  transform: scale(1.5);
+  transition: all 0.2s linear;
+}
+
+/* Home Bölümü */
+
+.home-container {
+  position: relative;
+}
+
+.home-container-img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+.home-wrapper {
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.home-wrapper img {
+  margin-top: 100px;
+  width: 400px;
+}
+
+.home-text {
+  margin-top: 50px;
+  width: 500px;
+  padding: 5px;
+  /* From https://css.glass */
+  background: rgba(238, 237, 237, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(238, 237, 237, 0.09);
+  text-align: justify;
+}
+
+.btn-1 {
+  z-index: 100;
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.btn-1:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+.btn-2 {
+  z-index: 100;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+
+  /* From https://css.glass */
+  background: rgba(188, 182, 182, 0.12);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(188, 182, 182, 0.09);
+}
+.btn-2:hover {
+  transform: scale(1.1);
+  transition: all 0.2s linear;
+}
+
+/* Filter Bölümü */
+
+.filter-section {
+  padding: 15px 0px 0px 100px;
+}
+
+.filter-selector {
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  background-color: black;
+}
+
+.filter-option {
+  font-size: 15px;
+}
+
+/* Movie List Bölümü */
+
+.movie-list-main-container {
+  margin-top: 20px;
+  padding-left: 100px;
+  color: white;
+}
+.populer-title {
+}
+
+.movie-list-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.movie-list-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; /* gizli kaydırma */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+.movie-list-container::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.02);
+  border: none;
+  color: white;
+  font-size: 5rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+.scroll-btn.left {
+  left: 0;
+}
+.scroll-btn.right {
+  right: 0;
+}
+
+.movie-box img {
+  cursor: pointer;
+  height: 150px;
+  width: 250px;
+  transition: all 0.2s linear;
+  object-fit: cover;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Dark Mode Bölümü */
+
+body.active {
+  background-color: white;
+  color: black;
+}
+
+.nav-bar.active {
+  background-color: white;
+  color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+  color: black;
+}
+
+.sidebar-container a i.active {
+  color: black !important;
+}
+.toggle.active {
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translateX(-20px);
+}
+
+.filter-selector.active {
+  color: black;
+  font-size: 15px;
+  border: 1px solid white;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Footer Bölümü */
+
+.footer-main-container {
+  margin-left: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.left-side {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.left-side i {
+  font-size: 25px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.left-side i:hover {
+  transform: scale(1.2);
+}
+.right-side {
+  object-position: center;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Responsive Bölümü */
+
+@media only screen and (max-width: 800px) {
+  .menu-list {
+    display: none;
+  }
+
+  .home-wrapper img {
+    width: 200px;
+  }
+  .home-wrapper p {
+    width: 200px;
+  }
+}
+
+/* --------------------------------------------------------------Sayfa Altı Notu------------------------------------------------------------
+1. * (Universal Selector)
+
+Kapsamı: Sayfadaki tüm elementleri seçer (div, ul, a, h1, button vs. hepsi).
+
+Amacı: Genellikle resetleme için kullanılır.
+
+Senin kodunda:
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+
+Burada tüm öğelerden tarayıcıların default boşluklarını ve süslemelerini kaldırıyorsun. Bu, temiz bir başlangıç için doğru.
+
+2. :root
+
+Kapsamı: Sayfanın en üst seviyesini temsil eder (html ile çok benzer ama daha güçlü).
+
+Amacı: CSS değişkenlerini (--color-primary gibi) tanımlamak için en ideal yer. Çünkü :root her zaman en yüksek kapsama sahiptir ve CSS değişkenlerini global yapar.
+
+Senin kodunda:
+
+:root {
+  --color-primary: #0d6241;
+  --color-secondary: #d51231;
+  --color-light: #d4e9e2;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
+
+
+Bu renkler artık tüm CSS dosyasında kullanılabilir (color: var(--color-primary); gibi).
+
+3. body
+
+Kapsamı: Sayfanın gövdesini (görünür içerik alanını) temsil eder.
+
+Amacı: Tüm sayfaya uygulanacak tipografi, arka plan rengi, temel renkler buraya yazılır.
+
+Senin kodunda:
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+Şu anda sadece yazı tipini belirliyorsun. İstersen buraya background-color, color, line-height gibi genel stilleri de ekleyebilirsin.
+
+4. html
+
+Kapsamı: Sayfanın en dış çerçevesi (yani <html> etiketi).
+
+Amacı: Genellikle:
+
+% tabanlı ölçüler (height:100%)
+
+Kaydırma ayarları (scroll-behavior: smooth;)
+
+Genel font-size (örneğin 62.5% = 1rem = 10px yapmak için)
+gibi şeyler buraya yazılır.
+
+Örnek:
+
+html {
+  font-size: 62.5%;  1rem = 10px yapar
+  scroll-behavior: smooth;
+}
+
+📊 Kıyas Tablosu
+Seçici	Etkilediği Alan	Tipik Kullanım	Senin Kodunda Görevi
+*	Tüm öğeler	Resetleme (margin/padding kaldırma, box-sizing)	Varsayılan tarayıcı stillerini temizlemek
+:root	Tüm sayfa (html’den bile yüksek kapsam)	CSS değişkenleri tanımlama	Renk paletini global yapmak
+html	Sayfanın en dış kapsayıcısı	Ölçülendirme, kaydırma, rem ayarı	Şu an yok, eklenebilir
+body	Görünür gövde	Tipografi, arka plan, temel renkler	Font ailesini belirleme
+
+👉 Özet:
+
+* → Temizlik
+
+:root → Değişken deposu
+
+html → Yapısal/global ayarlar
+
+body → Görünür içerik stilleri
+
+*/

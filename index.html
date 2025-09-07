@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie-Project</title>
+    <!-- *Css Link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- *FontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- NAV Bölümü -->
+
+    <div class="nav-bar">
+      <div class="navbar-wrapper">
+        <div class="logo-wrapper">
+          <h1 class="logo">LOGO</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active"><a href="#">Ana Sayfa</a></li>
+            <li class="menu-list-item"><a href="#">Filmler</a></li>
+            <li class="menu-list-item"><a href="#">Diziler</a></li>
+            <li class="menu-list-item"><a href="#">Listem</a></li>
+            <li class="menu-list-item"><a href="#">Popüler</a></li>
+          </ul>
+        </div>
+
+        <div class="profile-container">
+          <img
+            class="profile-picture"
+            src="./img/profile.jfif"
+            alt="profile-img"
+          />
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="toggle">
+            <i class="fa-solid fa-moon toggle-icon"></i>
+            <i class="fa-solid fa-sun toggle-icon"></i>
+            <div class="toggle-ball"><i class="fa-solid fa-circle"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDE Bölümü -->
+
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <a class="sidebar-icons" href="#"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a class="sidebar-icons" href="#"
+          ><i class="fa-solid fa-house-chimney"></i
+        ></a>
+        <a class="sidebar-icons" href="#"><i class="fa-solid fa-users"></i></a>
+        <a class="sidebar-icons" href="#">
+          <i class="fa-solid fa-bookmark"></i
+        ></a>
+        <a class="sidebar-icons" href="#"
+          ><i class="fa-solid fa-hourglass-start"></i
+        ></a>
+        <a class="sidebar-icons" href="#"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <a class="sidebar-icons" href="#"> <i class="fa-solid fa-gear"></i></a>
+      </div>
+    </div>
+
+    <!-- HOME Bölümü -->
+
+    <section class="home">
+      <div class="home-container">
+        <img
+          class="home-container-img"
+          src="./img/spiderman.jpg"
+          alt="spiderman"
+        />
+
+        <div class="home-wrapper">
+          <img src="./img/spiderman-title.png" alt="" />
+          <p class="home-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+            maiores perspiciatis, tempore commodi ipsa porro similique facere,
+            praesentium necessitatibus repellendus repudiandae ea nobis facilis
+            doloremque eveniet? Eum, voluptatibus voluptatum. Dolor unde sit
+            suscipit reiciendis quia culpa eveniet explicabo sed voluptates
+            quam. Sed perspiciatis aut atque deleniti explicabo, minima soluta
+            similique!
+          </p>
+          <button class="btn-1">
+            <span><i class="fa-solid fa-circle-play"></i></span> Oynat
+          </button>
+          <button class="btn-2">Daha Fazla Bilgi</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Bölümü -->
+
+    <div class="filter-section">
+      <select class="filter-selector">
+        <option class="filter-option" value="Aksiyon">Aksiyon</option>
+        <option class="filter-option" value="Animasyon">Animasyon</option>
+        <option class="filter-option" value="Belgesel">Belgesel</option>
+        <option class="filter-option" value="Komedi">Komedi</option>
+        <option class="filter-option" value="Bilim Kurgu">Bilim Kurgu</option>
+      </select>
+    </div>
+
+    <!-- Movie List Popüler Bölümü -->
+
+    <section class="movie-list-main-container">
+      <h1 class="populer-title">Popüler</h1>
+
+      <div class="movie-list-wrapper">
+        <button class="scroll-btn left">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="movie-list-container">
+          <div class="movie-box"><img src="./img/f1.jpg" alt="f-1" /></div>
+          <div class="movie-box"><img src="./img/f2.jpg" alt="f-2" /></div>
+          <div class="movie-box"><img src="./img/f3.jpg" alt="f-3" /></div>
+          <div class="movie-box"><img src="./img/f4.jpg" alt="f-4" /></div>
+          <div class="movie-box"><img src="./img/f5.jpg" alt="f-5" /></div>
+          <div class="movie-box"><img src="./img/f6.jpg" alt="f-6" /></div>
+          <div class="movie-box"><img src="./img/f7.jpg" alt="f-7" /></div>
+        </div>
+
+        <button class="scroll-btn right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Movie List Gündemdekiler Bölümü -->
+
+    <section class="movie-list-main-container">
+      <h1 class="populer-title">Gündemdekiler</h1>
+
+      <div class="movie-list-wrapper">
+        <button class="scroll-btn left">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="movie-list-container">
+          <div class="movie-box"><img src="./img/f6.jpg" alt="f-6" /></div>
+          <div class="movie-box"><img src="./img/f7.jpg" alt="f-7" /></div>
+          <div class="movie-box"><img src="./img/f3.jpg" alt="f-3" /></div>
+          <div class="movie-box"><img src="./img/f2.jpg" alt="f-2" /></div>
+
+          <div class="movie-box"><img src="./img/f5.jpg" alt="f-5" /></div>
+          <div class="movie-box"><img src="./img/f1.jpg" alt="f-1" /></div>
+          <div class="movie-box"><img src="./img/f4.jpg" alt="f-4" /></div>
+        </div>
+
+        <button class="scroll-btn right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Movie List Yeni Çıkanlar Bölümü -->
+
+    <section class="movie-list-main-container">
+      <h1 class="populer-title">Yeni Çıkanlar</h1>
+
+      <div class="movie-list-wrapper">
+        <button class="scroll-btn left">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="movie-list-container">
+          <div class="movie-box"><img src="./img/f4.jpg" alt="f-4" /></div>
+          <div class="movie-box"><img src="./img/f6.jpg" alt="f-6" /></div>
+          <div class="movie-box"><img src="./img/f1.jpg" alt="f-1" /></div>
+
+          <div class="movie-box"><img src="./img/f3.jpg" alt="f-3" /></div>
+
+          <div class="movie-box"><img src="./img/f5.jpg" alt="f-5" /></div>
+          <div class="movie-box"><img src="./img/f2.jpg" alt="f-2" /></div>
+
+          <div class="movie-box"><img src="./img/f7.jpg" alt="f-7" /></div>
+        </div>
+
+        <button class="scroll-btn right">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer Bölümü -->
+
+    <footer>
+      <div class="footer-main-container">
+        <div class="left-side">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="right-side">
+          <p>© 2025 MovieProject | Made by: Umut KAYA Tüm Hakları Saklıdır</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll(".movie-list-wrapper").forEach((wrapper) => {
+        const container = wrapper.querySelector(".movie-list-container");
+        const btnLeft = wrapper.querySelector(".scroll-btn.left");
+        const btnRight = wrapper.querySelector(".scroll-btn.right");
+
+        btnLeft.addEventListener("click", () => {
+          if (container.scrollLeft <= 0) {
+            // en başa gelmişse -> sona at
+            container.scrollTo({
+              left: container.scrollWidth,
+              behavior: "smooth",
+            });
+          } else {
+            container.scrollBy({ left: -300, behavior: "smooth" });
+          }
+        });
+
+        btnRight.addEventListener("click", () => {
+          if (
+            container.scrollLeft + container.clientWidth >=
+            container.scrollWidth
+          ) {
+            // en sona gelmişse -> başa dön
+            container.scrollTo({ left: 0, behavior: "smooth" });
+          } else {
+            container.scrollBy({ left: 300, behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
